@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3723a8d083.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+        <img src="images/logo.png" class="logo">    
+         <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+         </ul>
+         <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-end Developer</p>
+            <h1>Hi, I'm <br><span>Nousheen</span> Fatima</h1>
+        </div>
+    </div>
+</div>  
+<!-------------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+               <img src="images/front.png">
+            </div>
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>Motivated B.tech graduate specializing in Electronics and Communication,along with software development skills.As the founder of "Loving Art",a successful online venture in handmade crafts,
+                    I excel in marketing and customer engagement across diverse platforms. Eager to apply my technical acumen and creative problem-solving to software development projects.Proven adaptability,
+                    entrepreneurial spirit,and proficiency in leveraging social media for business expansion.Ready to contribute and learn in the dynamic IT landscape</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div> 
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Oops</li>
+                        <li>Python</li>
+                        <li>React</li>
+                    </ul>
+                </div>   
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span></li>
+                        <li><span>2024-present</span><br>Web Development internship at Oasis infobyte</li>
+                        <li><span>2022</span><br>Programming internship at Cisco</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>B.tech in Electronics And Communication Engineering<br>with aggregate of 8.51 CGPA</li>
+                        <li><span>2019</span><br>12th with aggregate of 76% </li>
+                        <li><span>2017</span><br>10th with aggregate of 7.2 CGPA</li>
+                    </ul>
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Website Dev</h2>
+                <p>Developing a website appearance based on design into a website that can be use.With good performance</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>WebApps Dev</h2>
+                <p>Developing a very well-functioning web application,various features and performance</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Responsive design</h2>
+                <p>Develop a good Frontend design for mobile,tablet,desktop and all screen devices</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------portfolio------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/LovingArt.png">
+                <div class="layer">
+                    <h3>Shopping website</h3>
+                    <p>A typical online store enable the customer to browse the firm's range of products and services,view photos or images of the products,along with information about the product specifications,features and prices.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Weather App.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>The application of science and technology to predict the conditions of the atmosphere for a given location and time.It stay informed about current weather condition of any location search by user</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/BMIcalcilator.png">
+                <div class="layer">
+                    <h3>BMI calculator</h3>
+                    <p>BMI calculator is an inexpensive and easy screening method for weight category-underweight,healthy weight,overweight,and obesity.It is a reliable indicator of body fatness for most people.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>nousheenfatima737@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8103424478</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Resume_N.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Emial" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright portfolio.Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxu1UKP3-W3-ps-vQwtBY89vE5GHm1vKY4_-YyFqWiTmZcDb0rmEZapl5lRWH0fxlr0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
